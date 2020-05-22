@@ -3,6 +3,7 @@ package com.summer.b10709037_hw2;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceManager;
 import androidx.recyclerview.widget.ItemTouchHelper;
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
     private GuestListAdapter mAdapter;
     private SQLiteDatabase mDb;
     private AlertDialog.Builder dialog;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -152,5 +154,8 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
     @Override
     public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
 
+        if(key.equals("red")){
+
+        }
     }
 }

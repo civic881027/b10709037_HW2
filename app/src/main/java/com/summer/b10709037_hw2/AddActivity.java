@@ -53,8 +53,10 @@ public class AddActivity extends AppCompatActivity {
         intent.putExtra("guestName",name);
         intent.putExtra("partySize",partySize);
         startActivity(intent);
-
-
+    }
+    public void backToMain(View view){
+        Intent intent=new Intent(this,MainActivity.class);
+        startActivity(intent);
     }
 
 

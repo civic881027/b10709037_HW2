@@ -5,6 +5,7 @@
         android:entries="@array/pref_color_option_labels"
         android:entryValues="@array/pref_color_option_values"
         android:key="color"
+        android:summary="colorHere"
         android:title="Color"/>
 
 </PreferenceScreen>

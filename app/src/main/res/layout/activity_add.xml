@@ -42,6 +42,14 @@
         android:onClick="addToWaitlist"
         android:text="ADD"
         android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Inverse" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/back_to_waitlist_button"
+        android:text="Cancel"
+        android:background="@color/colorPrimary"
+        android:onClick="backToMain"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Inverse"/>
 
 
 </LinearLayout>

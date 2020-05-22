@@ -4,6 +4,8 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.graphics.Color;
+import android.graphics.ColorFilter;
+import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -47,7 +49,7 @@ public class GuestListAdapter extends RecyclerView.Adapter<GuestListAdapter.Gues
         setupColor();
         holder.nameTextView.setText(name);
         holder.partySizeTextView.setText(String.valueOf(partySize));
-        holder.partySizeTextView.setBackgroundColor(color);
+        holder.partySizeTextView.getBackground().setColorFilter(color, PorterDuff.Mode.SRC_ATOP);
         holder.itemView.setTag(id);
 
     }
